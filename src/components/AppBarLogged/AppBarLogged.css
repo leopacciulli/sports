@@ -1,0 +1,26 @@
+.appBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: auto;
+    background: #64B5F6;
+    height: 70px;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0px 0px 10px 1px #333;
+}
+.divTitle {
+    display: flex;
+    align-items: center;
+}
+.svgBars {
+    width: 25px !important;
+    height: 25px;
+}
+.svgBars:hover {
+    cursor: pointer;
+}
+.titleMainPage {
+    font-size: 25px;
+    /* margin-left: 30px; */
+}

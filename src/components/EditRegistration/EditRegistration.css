@@ -1,0 +1,8 @@
+.dialogEdit > div:nth-child(2) {
+    width: 50%;
+    padding: 30px;
+}
+.dialogEdit .MuiDialogTitle-root-98 {
+    padding: 0px;
+    margin-bottom: 20px;
+}
