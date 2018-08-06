@@ -1,4 +1,4 @@
 # APP
-Simple CRUD with React.JS
+Simple app React.JS
 
 Created with: create-react-app
