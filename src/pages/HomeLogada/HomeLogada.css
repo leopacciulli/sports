@@ -1,0 +1,35 @@
+.imgDestaque {
+    background: url(/static/media/destaque.1cb32bcc.jpg) no-repeat 0PX -1070px fixed;
+    width: 100%;
+    height: 500px;
+}
+.backgroundDestaque {
+    max-width: 1200px;
+    background: #f9f9f9;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: -465px;
+    margin-bottom: 60px;
+}
+.divEstabDestaque {
+    display: flex;
+    justify-content: space-between;
+}
+.blackDestaque {
+    background-color: #424242;
+    position: absolute;
+    top: 70px;
+    height: 500px;
+    width: 100%;
+    opacity: 0.1;
+}
+.txtDestaque {
+    margin: 0 auto 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #424242;
+    letter-spacing: 0;
+    padding: 5px 0 5px;
+    border-bottom: 1px solid #cecece;
+}

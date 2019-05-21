@@ -1,0 +1,17 @@
+.headerHomeDeslogada {
+    background: url("../../images/destaque.jpg") no-repeat center -360px fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.backBlack {
+    background-color: #424242;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+}

@@ -1,0 +1,20 @@
+.footer {
+    height: 230px;
+    background: #424242;
+    color: #FFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes img {
+    width: 56px;
+    margin: 0 20px;
+}
+.redes img:hover {
+    cursor: pointer;
+}
+.direitos {
+    margin-top: 50px;
+    letter-spacing: 0.5px;
+}

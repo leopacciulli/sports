@@ -6,12 +6,21 @@
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <title>Sports Center</title>
+    <title>Hair Shop</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.inputEmail').mask('00/00/0000');
+    });
+
+    </script>
   </body>
 </html>

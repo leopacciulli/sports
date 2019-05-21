@@ -1,22 +1,42 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { Redirect } from "react-router-dom";
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import './AppBarLogged.css';
 
 class AppBarLogged extends Component {
 
+    constructor(props){
+        super(props);
+		this.state = {
+			logout: false
+		}
+    }
+
     logout = () => {
-        alert("Logout")
+        this.setState({ logout: true })
     }
 
     render() {
+        //se encontrar usuário registrado vai pra home logada
+		if (this.state.logout === true) {
+			return <Redirect to='/hairshop' />
+        }
+
+        /**
+            <div className="divBusca">
+                <input placeholder="Encontre um estabelecimento" className="busca" />
+            </div>
+         */
+        
         return (
             <div className="appBarContainer">
                 <div className="appBar">
+                    <div className="titleWeb">Hair Shop</div>
                     <div className="divTitle">
-                        <div className="titleMainPage">1º Marathon Event - Sports Center</div>
+                        <FontAwesomeIcon icon={faUser} className="svgBars"/>
+                        <div className="titleMainPage">{this.props.userName}</div>
                     </div>
-                    <FontAwesomeIcon icon={faSignOutAlt} className="svgBars" onClick={this.logout}/>
                 </div>
             </div>
         );

@@ -1,0 +1,50 @@
+.cadastro {
+    background: url("../../images/destaque.jpg") no-repeat 0PX -840px fixed;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.backBlackCadastro {
+    background-color: #424242;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.boxCadastro {
+    background: #e3e3e3;
+    height: 580px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+.boxCadLogin {
+    background: #e3e3e3;
+    height: 330px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+.titleBoxCadastro {
+    text-align: center;
+    color: #424242;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.senhasDiferentes {
+    position: absolute;
+    margin-left: 21px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ef3c3c;
+}

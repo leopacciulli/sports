@@ -1,0 +1,53 @@
+.banner {
+    background: #dedede;
+    height: 500px;
+    box-shadow: 0px -10px 20px #ccc;
+}
+.salao {
+    position: absolute;
+    width: 259px;
+    height: 164px;
+    top: 55px;
+    border-radius: 4px;
+}
+.divImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pc {
+    height: 260px;
+    margin-top: 45px;
+}
+.flexBanner {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 30px auto;
+    align-items: center;
+}
+.txtCadastrar {
+    width: 50%;
+}
+.cadastreTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242;
+}
+.cadastreSub {
+    margin-top: 5px;
+    width: 60%;
+    color: #424242;
+}
+.btnCadastrarSalao:hover {
+    cursor: pointer;
+}
+.btnCadastrarSalao {
+    height: 55px;
+    width: 205px;
+    font-size: 18px;
+    background: #424242;
+    color: #fff;
+    border-radius: 6px;
+}

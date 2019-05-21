@@ -1,92 +1,61 @@
 import React from 'react';
-import AppBarLogged from '../../components/AppBarLogged/AppBarLogged';
-import Modality from './Modality';
-import cycling from '../../images/bike.png';
-import swimmimg from '../../images/swim.png';
-import running from '../../images/run.png';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomeDeslogada from '../HomeDeslogada/HomeDeslogada';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Cyclism from '../Cyclism/Cyclism';
-import Swimming from '../Swimming/Swimming';
-import Running from '../Running/Running';
-import Login from '../Login/Login';
+import ServicosDisponiveis from '../HomeDeslogada/ServicosDisponiveis';
+import Banner from '../HomeDeslogada/Banner';
+import Footer from '../../components/Footer/Footer';
+import Cadastro from '../Cadastro/Cadastro';
+import CadastroEstabelecimento from '../CadastroEstabelecimento/CadastroEstabelecimento';
+import HomeLogada from '../HomeLogada/HomeLogada';
+
+//import { loginService } from '../../services/autenticacaoService';
 
 import './MainPage.css';
 
 const MainPage = () => (
     <Router>
         <div>
-            <Route exact path="/" component={login} />
-            <Route path="/home" component={home} />
-            <Route path="/cyclism" component={cyclismPage} />
-            <Route path="/swimming" component={swimmingPage} />
-            <Route path="/running" component={runningPage} />
+            <Route exact path="/" component={homeDeslogada} />
+            <Route path="/cadastro" component={cadastro} />
+            <Route path="/cadastro-estabelecimento" component={cadastroEstabelecimento} />
+            <Route path="/hairshop" component={homeDeslogada} />
+            <Route path="/home" component={homeLogada}  />
         </div>
     </Router>
 )
 
-const login = () => (
-    <div className="loginPage">
-        <Login home={home} />
+const homeLogada = () => (
+    <div className="homePageLogada">
+        <HomeLogada />
+        <ServicosDisponiveis 
+            entrar={true}
+        />
+        <Footer />
+    </div>
+)
+
+const homeDeslogada = () => (
+    <div className="homePageDeslogada">
+        <HomeDeslogada />
+        <ServicosDisponiveis 
+            entrar={false}
+        />
+        <Banner />
+        <Footer />
     </div>
 );
 
-const home = () => (
-    <span>
-        <AppBarLogged />
-        <div className="mainPage">
-            <div className="subHeader">
-                <div className="title">Welcome to the 1st marathon event in your city.</div>
-                <div className="subTitle">Choose your mode below and detonate.</div>
-            </div>
-
-            <div className="modalityContainer">
-                <Link to="/swimming">
-                    <Modality
-                        title="Swimming"
-                        img={swimmimg}
-                        classImg="imgSwimming"
-                    />
-                </Link>
-                <Link to="/running">
-                    <Modality
-                        title="Running"
-                        img={running}
-                        classImg="imgRunning"
-                    />
-                </Link>
-                <Link to="/cyclism">
-                    <Modality
-                        title="Cycling"
-                        img={cycling}
-                        classImg="imgCycling"
-                    />
-                </Link>
-            </div>
-        </div>
-    </span>
+const cadastro = () => (
+    <div>
+        <Cadastro />
+    </div>
 );
 
-
-const cyclismPage = () => (
-    <span>
-        <AppBarLogged />
-        <Cyclism home={home} />
-    </span>
-);
-
-const swimmingPage = () => (
-    <span>
-        <AppBarLogged />
-        <Swimming home={home} />
-    </span>
-);
-
-const runningPage = () => (
-    <span>
-        <AppBarLogged />
-        <Running home={home} />
-    </span>
+const cadastroEstabelecimento = () => (
+    <div>
+        <CadastroEstabelecimento />
+    </div>
 );
 
 export default MainPage;
