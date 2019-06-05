@@ -12,6 +12,7 @@ import HomeLogada from '../HomeLogada/HomeLogada';
 //import { loginService } from '../../services/autenticacaoService';
 
 import './MainPage.css';
+import Estabelecimento from '../Estabelecimento/Estabelecimento';
 
 const MainPage = () => (
     <Router>
@@ -21,6 +22,7 @@ const MainPage = () => (
             <Route path="/cadastro-estabelecimento" component={cadastroEstabelecimento} />
             <Route path="/hairshop" component={homeDeslogada} />
             <Route path="/home" component={homeLogada}  />
+            <Route path="/estabelecimento" component={estabelecimento}  />
         </div>
     </Router>
 )
@@ -55,6 +57,12 @@ const cadastro = () => (
 const cadastroEstabelecimento = () => (
     <div>
         <CadastroEstabelecimento />
+    </div>
+);
+
+const estabelecimento = () => (
+    <div>
+        <Estabelecimento />
     </div>
 );
 

@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import './ServicosDisponiveis.css';
 import Servicos from '../../components/Servicos/Servicos';
 import { DisponibilidadesService } from '../../services/disponibilidadesService';
+import LoaderMy from '../../components/Loader/LoaderMy';
 
 export default class ServicosDisponiveis extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            servicos: []
+            servicos: [],
+            loading: false
         }
 
         this.disponibilidadesService = new DisponibilidadesService();
@@ -20,9 +22,11 @@ export default class ServicosDisponiveis extends Component {
 	}
 
 	getServices = () => {
+        this.setState({ loading: true });
 		this.disponibilidadesService.then((value) => {
 			this.setState({
-				servicos: value.data.data
+                servicos: value.data.data,
+                loading: false
 			})
 		}).catch((error) => {
 			console.log("Api call error --> ", error);
@@ -34,7 +38,9 @@ export default class ServicosDisponiveis extends Component {
             <div className="servicosDisponiveis">
                 <div className="txtTitleServicos">Conheça os nossos serviços em destaque</div>
                 <div className="containerServicos">
-                    {this.state.servicos.map(dt => {
+                    {this.state.loading
+                        ? <LoaderMy className="loaderServicos" />
+                        : this.state.servicos.map(dt => {
                         return <Servicos 
                             key={dt.id}
                             servico={dt.servico}

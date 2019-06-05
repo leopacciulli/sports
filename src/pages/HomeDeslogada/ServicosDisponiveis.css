@@ -20,3 +20,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.loaderServicos {
+    height: 654px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}

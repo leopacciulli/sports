@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import './HomeLogada.css';
 import AppBarLogged from '../../components/AppBarLogged/AppBarLogged';
 import { EstabelecimentoService } from '../../services/estabelecimentoService';
 import EstabelecimentosDestaque from '../../components/EstabelecimentosDestaque/EstabelecimentosDestaque';
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import LoaderMy from '../../components/Loader/LoaderMy';
+
+import './HomeLogada.css';
 
 class HomeLogada extends Component {
 
@@ -10,7 +13,9 @@ class HomeLogada extends Component {
         super(props);
         this.state = {
             user: {},
-            estabelecimento: []
+            estabelecimento: [],
+            openEstabelecimento: false,
+            loading: false
         }
 
         this.estabelecimentoService = new EstabelecimentoService();
@@ -24,16 +29,25 @@ class HomeLogada extends Component {
     }
 
     getEstabelecimentoDestaque = () => {
-        this.estabelecimentoService.then((value) => {
+        this.setState({ loading: true });
+        this.estabelecimentoService.getEstabelecimentos().then((value) => {
             let estabelecimento = value.data.data.filter(es => es.destaque === "1");
-			this.setState({ estabelecimento })
+			this.setState({ estabelecimento, loading: false })
 		}).catch((error) => {
 			console.log("Api call error --> ", error);
 		});
     }
 
+    goToEstabelecimento = (es) => {
+        localStorage.setItem('estabelecimento', JSON.stringify(es));
+        this.setState({ openEstabelecimento: true })
+    }
+
     render() {
-        console.log(this.state)
+        if (this.state.openEstabelecimento){
+            return <Redirect to='/estabelecimento' />
+        }
+
         return (
             <div className="homeLogada">
                 <AppBarLogged 
@@ -45,14 +59,18 @@ class HomeLogada extends Component {
                 <div className="backgroundDestaque">
                     <div className="txtDestaque">Estabelecimentos em destaque</div>
                     <div className="divEstabDestaque">
-                        {this.state.estabelecimento.map(es => {
-                            return <EstabelecimentosDestaque 
-                                imagem={es.imagem}
-                                logradouro={es.logradouro}
-                                numero={es.numero}
-                                bairro={es.bairro}
-                            />
-                        })}   
+                        {this.state.loading
+                            ? <LoaderMy className="loaderDestaque" />
+                            : this.state.estabelecimento.map(es => {
+                                return <EstabelecimentosDestaque 
+                                    imagem={es.imagem}
+                                    logradouro={es.logradouro}
+                                    numero={es.numero}
+                                    bairro={es.bairro}
+                                    goToEstabelecimento={() => this.goToEstabelecimento(es)}
+                                />
+                            })
+                        } 
                     </div>
                 </div>
             </div>

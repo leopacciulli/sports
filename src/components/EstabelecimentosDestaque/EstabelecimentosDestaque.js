@@ -8,7 +8,7 @@ export default class EstabelecimentosDestaque extends Component {
                 <img src={this.props.imagem} className="imgEstabelecimentoDestaque" alt="produto"/>
                 <div className="infoEstabelecimento">
                     <div className="txtEstabelecimento">{this.props.logradouro}, {this.props.numero} - {this.props.bairro}</div>
-                    <button className="btnConhecaEstabelecimento">Conheça</button>
+                    <button onClick={this.props.goToEstabelecimento} className="btnConhecaEstabelecimento">Conheça</button>
                 </div>
             </div>     
         )

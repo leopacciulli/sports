@@ -1,0 +1,56 @@
+.tabSelected {
+    padding: 0px 20px 20px 20px;
+}
+.flexTipoServico:hover {
+    cursor: pointer;
+}
+.flexTipoServico.servicoSelecionado {
+    background: #ddd;
+}
+.flexTipoServico {
+    width: 95px;
+    height: 100px;
+    background: #fff;
+    box-shadow: 2px 2px 10px #AAA;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tipoServicoEstabelecimento {
+    display: flex;
+    align-items: center;
+}
+
+.iconSize {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoTipoServico {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.iconCabelo {
+    width: 40px;
+    height: 35px;
+}
+.iconSombrancelha {
+    height: 35px;
+    width: 35px;
+}
+.iconBarba {
+    height: 50px;
+    width: 70px;
+}
+.iconManicure {
+    height: 45px;
+    width: 60px;
+}

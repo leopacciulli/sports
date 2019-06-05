@@ -1,0 +1,117 @@
+.avaliacao {
+    min-height: 230px;
+}
+
+.semAvaliacao {
+    font-size: 27px;
+    color: #424242;
+    border-right: 1px solid #ddd;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.comAvaliacao {
+    font-size: 24px;
+    color: #424242;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.flexRating {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexAvaliacao {
+    display: flex;
+}
+
+.divAvaliar {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.inputAvaliar {
+    height: 100px;
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    font-size: 22px;
+    resize: none;
+}
+
+.iconStar {
+    width: 24px;
+    height: 24px;
+}
+
+.divBtnAvaliar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btnAvaliar {
+    height: 40px;
+    padding: 0 40px;
+    font-size: 21px;
+    border-radius: 4px;
+    background: #424242;
+    color: #fff;
+    box-shadow: 1px 1px 5px #aaa;
+    border: 1px solid #424242;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.divAvaliacoes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.avaliacaoUsuario {
+    margin-bottom: 40px;
+    width: 45%;
+    border: 1px solid #ddd;
+    padding: 11px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 11px #ddd;
+}
+
+.flexTopoAvaliacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomeUsuario {
+    color: #424242;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.emailUsuario {
+    font-size: 15px;
+    color: #424242;
+    margin-top: 5px;
+}
+
+.avaliacaoDoUsuario {
+    margin-top: 10px;
+    color: #333;
+}
+
+.dataAvaliacao {
+    font-size: 12px;
+    color: #424242;
+    margin-top: 10px;
+}
