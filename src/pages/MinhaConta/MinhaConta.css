@@ -1,0 +1,38 @@
+.minhaContaPage {
+    background: url("../../images/destaque.jpg") no-repeat 0PX -840px fixed;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 70px);
+    justify-content: center;
+    flex-direction: column;
+}
+.backBlackMinhaConta {
+    background-color: #424242;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.boxMinhaConta {
+    background: #e3e3e3;
+    height: 380px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+.titleBoxMinhaConta {
+    text-align: center;
+    color: #424242;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.infoUsuario {
+    height: 60px;
+    font-size: 22px;
+    color: #333;
+}

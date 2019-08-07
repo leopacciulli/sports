@@ -200,7 +200,7 @@ export default class CadastroEstabelecimento extends Component {
 
                                     <div className="divEstabelecimento">
                                         <div className="tituloField">Facilidades</div>
-                                        <div className="flexCampos">
+                                        <div className="flexCampos flexFacilidades">
                                             <div className="checkInput">
                                                 <Field
                                                     name="debito"
@@ -233,6 +233,52 @@ export default class CadastroEstabelecimento extends Component {
                                             </div>
                                         </div>
                                     </div>
+
+                                    {/*<div className="divEstabelecimento">
+                                        <div className="tituloField">Selecione os tipos de serviço que seu salão oferece</div>
+                                        <div className="flexCampos">
+                                            <div className="checkInput">
+                                                <Field
+                                                    name="barba"
+                                                    component="input"
+                                                    type="checkbox"
+                                                    value="barba"
+                                                    className="checkboxInput"
+                                                />
+                                                <div className="checkTxt">Barba</div>
+                                            </div>
+                                            <div className="checkInput">
+                                                <Field
+                                                    name="cabelo"
+                                                    component="input"
+                                                    type="checkbox"
+                                                    value="cabelo"
+                                                    className="checkboxInput"
+                                                />
+                                                <div className="checkTxt">Cabelo</div>
+                                            </div>
+                                            <div className="checkInput">
+                                                <Field
+                                                    name="manicure"
+                                                    component="input"
+                                                    type="checkbox"
+                                                    value="manicure"
+                                                    className="checkboxInput"
+                                                />
+                                                <div className="checkTxt">Manicure e Pedicure</div>
+                                            </div>
+                                            <div className="checkInput">
+                                                <Field
+                                                    name="sombrancelha"
+                                                    component="input"
+                                                    type="checkbox"
+                                                    value="sombrancelha"
+                                                    className="checkboxInput"
+                                                />
+                                                <div className="checkTxt">Sombrancelha</div>
+                                            </div>
+                                        </div>
+                                            </div>*/}
                                     
                                     <div className="footerButtons">
                                         <Link to="/hairshop">

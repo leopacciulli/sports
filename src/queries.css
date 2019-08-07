@@ -1,0 +1,422 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    /* deslogado */
+    .headerHomeDeslogada {
+        height: 450px !important;
+    }
+
+    .backBlack {
+        height: 450px !important;
+    }
+
+    .flexHeader {
+        position: relative !important;
+        z-index: 999 !important;
+        height: 450px !important;
+        max-width: 1200px !important;
+        padding: 0 20px !important;
+    }
+
+    .title1 {
+        font-size: 30px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .title2 {
+        color: #fff !important;
+        font-size: 16px !important;
+    }
+
+    .div2 {
+        height: 300px !important;
+        width: 320px !important;
+    }
+
+    .titleBox {
+        font-size: 20px !important;
+        margin-bottom: 30px !important;
+        margin-top: 10px !important;
+    }
+
+    .boxCadastroEstabelecimento {
+        width: 85% !important;
+        max-width: 700px !important;
+    }
+
+    .backImg {
+        height: 160px !important;
+    }
+
+    .imgServ {
+        height: 160px !important;
+    }
+
+    /* logado */
+    .appBar {
+        width: auto !important;
+    }
+
+    .estabelecimentosDestaque {
+        width: 30% !important;
+        height: 270px !important;
+    }
+
+    .txtEstabelecimento {
+        font-size: 11px !important;
+        text-align: center;
+    }
+
+    .blackDestaque {
+        height: 460px !important;
+    }
+
+    .backgroundDestaque {
+        max-width: 1200px;
+        width: 90% !important;
+    }
+
+    /* avaliacoes */
+    .divAvaliacoes {
+        margin-top: 20px !important;
+        padding: 0px !important;
+    }
+
+    .semAvaliacao {
+        font-size: 22px !important;
+    }
+
+    /* imagens */
+    .tabSelected.imagens {
+        padding: 20px !important;
+    }
+
+    .Modal {
+        top: -60px !important;
+        left: -40px !important;
+        right: -40px !important;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    /* deslogado */
+    .headerHomeDeslogada {
+        height: 450px !important;
+    }
+
+    .backBlack {
+        height: 450px !important;
+    }
+
+    .flexHeader {
+        position: relative !important;
+        z-index: 999 !important;
+        height: 450px !important;
+        max-width: 1200px !important;
+        padding: 0 20px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .div1 {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .title1 {
+        font-size: 30px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .title2 {
+        color: #fff !important;
+        font-size: 16px !important;
+    }
+
+    .div2 {
+        height: 250px !important;
+        width: 320px !important;
+        margin-top: 25px !important;
+    }
+
+    .divInput {
+        margin-top: 15px !important;
+    }
+
+    .footerButtons {
+        margin-top: 20px !important;
+    }
+
+    .titleBox {
+        font-size: 20px !important;
+        margin-bottom: 30px !important;
+        margin-top: 10px !important;
+    }
+
+    .boxCadastroEstabelecimento {
+        width: 85% !important;
+        max-width: 700px !important;
+    }
+
+    .titleServ {
+        font-size: 12px !important;
+    }
+
+    .descServ {
+        font-size: 11px !important;
+    }
+
+    .preco {
+        font-size: 13px !important;
+    }
+
+    .backImg {
+        height: 130px !important;
+    }
+
+    .imgServ {
+        height: 130px !important;
+    }
+
+    .pc {
+        height: 190px !important;
+        margin-top: 25px !important;
+    }
+
+    .salao {
+        width: 179px !important;
+        height: 114px !important;
+        top: 35px !important;
+    }
+
+    .flexBanner {
+        margin: 0px auto !important;
+        flex-direction: column !important;
+    }
+
+    .txtCadastrar {
+        width: 70% !important;
+        text-align: center;
+    }
+
+    .cadastreSub {
+        margin-top: 25px !important;
+        width: 100% !important;
+    }
+
+    .cadastrarSalao {
+        margin-top: 30px;
+    }
+
+    .banner {
+        height: 480px !important;
+    }
+
+    .direitos {
+        text-align: center !important;
+    }
+
+    .servicosDisponiveis {
+        padding: 10px !important;
+    }
+
+    .txtTitleServicos {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .servicos {
+        width: 45% !important;
+    }
+
+    /* cadastro */
+    .boxCadastro {
+        height: 420px !important;
+        max-width: 450px !important;
+        width: 80% !important;
+    }
+
+    .titleBoxCadastro {
+        font-size: 19px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .flexCampos {
+        flex-direction: column !important;
+    }
+
+    .flexCampos.flexFacilidades {
+        flex-direction: row !important;
+    }
+
+    .inputWidth {
+        width: 100% !important;
+    }
+
+    .input {
+        height: 25px !important;
+        font-size: 14px !important;
+    }
+
+    .inputArea {
+        height: 50px !important;
+        padding-left: 9px !important;
+        padding-top: 10px !important;
+    }
+
+    .titleBoxCadastroEstabelecimento {
+        font-size: 17px !important;
+    }
+
+    .tituloField {
+        font-size: 15px !important;
+    }
+
+    .btn {
+        width: 130px !important;
+        height: 30px !important;
+        font-size: 14px !important;
+    }
+
+    /* logado */
+    .appBar {
+        padding: 0 10px !important;
+        width: auto !important;
+    }
+
+    .divEstabDestaque {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .estabelecimentosDestaque {
+        max-width: 385px !important;
+        width: 100% !important;
+        height: 270px !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .txtEstabelecimento {
+        font-size: 11px !important;
+        text-align: center;
+    }
+
+    .blackDestaque {
+        height: 1000px !important;
+    }
+
+    .imgDestaque {
+        height: 1000px !important;
+    }
+
+    .backgroundDestaque {
+        margin-top: -965px !important;
+        max-width: 1200px;
+        width: 90% !important;
+        margin-bottom: 30px !important;
+    }
+
+    .boxMinhaConta {
+        width: 90% !important;
+        max-width: 450px !important;
+    }
+
+    .titleWeb {
+        font-size: 25px !important;
+    }
+
+    .titleMainPage {
+        font-size: 17px !important;
+    }
+
+    .svgBars {
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 10px !important;
+    }
+
+    .txtDestaque {
+        font-size: 20px !important;
+    }
+
+    /* avaliacoes */
+    .divAvaliacoes {
+        margin-top: 20px !important;
+        padding: 0px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .semAvaliacao {
+        font-size: 22px !important;
+    }
+
+    .flexAvaliacao {
+        flex-direction: column !important;
+    }
+
+    .semAvaliacao {
+        border: none !important;
+        width: 100% !important;
+    }
+
+    .divAvaliar {
+        margin-top: 30px !important;
+        width: 100% !important;
+    }
+
+    .avaliacaoUsuario {
+        width: 85% !important;
+        max-width: 500px !important;
+    }
+
+    /* imagens */
+    .tabSelected.imagens {
+        padding: 20px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .galeriaImagens {
+        width: 90% !important;
+        max-width: 400px !important; 
+    }
+
+    /* salao */
+    .flexTopo {
+        align-items: center !important;
+    }
+
+    .nomeSalao {
+        font-size: 18px !important;
+    }
+
+    .verMapa {
+        font-size: 15px !important;
+    }
+
+    .facilidadesSalao {
+        flex-direction: column !important;
+    }
+
+    .abaAtiva.abaGeral {
+        font-size: 16px !important;
+    }
+
+    .abaGeral {
+        font-size: 13px !important;
+    }
+
+    .flexTipoServico {
+        margin-bottom: 20px !important;
+    }
+    
+    .Modal {
+        top: -60px !important;
+        left: -90px !important;
+        right: -90px !important;
+    }
+
+}

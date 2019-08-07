@@ -98,6 +98,13 @@
     margin-left: 30px;
 }
 
+.tabSelected.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 50px 20px 50px;
+}
+
 .txtEscolher {
     font-size: 23px;
     margin-bottom: 15px;
@@ -112,26 +119,128 @@
     flex-wrap: wrap;
 }
 
-.agendar {
-    display: flex;
-    justify-content: center;
-}
-.btnAgendar {
-    height: 40px;
-    padding: 0 40px;
-    font-size: 21px;
-    border-radius: 4px;
-    background: #424242;
-    color: #fff;
-    box-shadow: 1px 1px 5px #aaa;
-    border: 1px solid #424242;
-    opacity: 0.8;
-    cursor: pointer;
-}
-
 .loaderAvaliacao {
     display: flex;
     justify-content: center;
     height: 200px;
     align-items: center;
+}
+
+.loaderCenter {
+    text-align: center;
+}
+
+
+.rbc-allday-cell {
+    display: none;
+}
+.rbc-time-view .rbc-header {
+    border-bottom: none;
+}
+.rbc-event {
+    min-height: 40px !important;
+}
+.rbc-day-slot .rbc-event-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rbc-current-time-indicator {
+    height: 2px !important;
+    background-color: #424242 !important;
+    border-radius: 10px;
+}
+
+.Modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #FFF;
+    color: #424242;
+    box-shadow: 0px 0px 20px 3px #424242;
+    z-index: 9999;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Overlay {
+    position: fixed;
+    top: 300px;
+    bottom: 300px;
+    left: 25%;
+    right: 25%;
+    background-color: #FFF;
+    border-radius: 10px;
+    z-index: 9999;
+    width: 50%;
+}
+
+.OverlayCancel {
+    position: fixed;
+    top: 370px;
+    bottom: 370px;
+    left: 25%;
+    right: 25%;
+    background-color: #FFF;
+    border-radius: 10px;
+    z-index: 9999;
+    width: 50%;
+}
+
+.tituloMOdal {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 10px;
+}
+
+.background {
+    width: 100%;
+    height: 2000px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+}
+
+.corpoModal {
+    margin-top: 20px;
+}
+
+.itemModal {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.btnModal {
+    margin: 0 20px;
+    height: 35px;
+    padding: 0 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnsModal {
+    position: absolute;
+    bottom: 30px;
+    width: 94%;
+    justify-content: center;
+    display: flex;
+}
+
+.btnModal.confirmar {
+    background: #424242;
+    color: #FFF;
+}
+
+.btnModal.cancelar {
+    border: 1px solid #424242;
+    color: #424242;
 }

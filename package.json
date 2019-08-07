@@ -13,14 +13,17 @@
     "format-string-by-pattern": "^0.3.1",
     "moment": "^2.24.0",
     "react": "^16.4.1",
+    "react-big-calendar": "^0.21.0",
     "react-dom": "^16.4.1",
     "react-final-form": "^3.7.0",
     "react-input-mask": "^2.0.2",
     "react-loader-spinner": "^2.3.0",
+    "react-modal": "^3.8.1",
     "react-rating": "^1.7.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-tiny-popover": "^3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",

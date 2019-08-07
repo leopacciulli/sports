@@ -8,11 +8,12 @@ import Footer from '../../components/Footer/Footer';
 import Cadastro from '../Cadastro/Cadastro';
 import CadastroEstabelecimento from '../CadastroEstabelecimento/CadastroEstabelecimento';
 import HomeLogada from '../HomeLogada/HomeLogada';
+import Estabelecimento from '../Estabelecimento/Estabelecimento';
+import MinhaConta from '../MinhaConta/MinhaConta';
 
 //import { loginService } from '../../services/autenticacaoService';
 
 import './MainPage.css';
-import Estabelecimento from '../Estabelecimento/Estabelecimento';
 
 const MainPage = () => (
     <Router>
@@ -21,8 +22,9 @@ const MainPage = () => (
             <Route path="/cadastro" component={cadastro} />
             <Route path="/cadastro-estabelecimento" component={cadastroEstabelecimento} />
             <Route path="/hairshop" component={homeDeslogada} />
-            <Route path="/home" component={homeLogada}  />
-            <Route path="/estabelecimento" component={estabelecimento}  />
+            <Route path="/home" component={homeLogada} />
+            <Route path="/estabelecimento" component={estabelecimento} />
+            <Route path="/minha-conta" component={minhaConta}  />
         </div>
     </Router>
 )
@@ -34,6 +36,12 @@ const homeLogada = () => (
             entrar={true}
         />
         <Footer />
+    </div>
+)
+
+const minhaConta = () => (
+    <div className="minhaConta">
+        <MinhaConta />
     </div>
 )
 

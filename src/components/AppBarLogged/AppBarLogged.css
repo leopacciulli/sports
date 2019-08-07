@@ -18,6 +18,7 @@
 .divTitle {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .svgBars {
     width: 25px !important;
@@ -45,4 +46,28 @@
     font-family: cursive;
     font-weight: bold;
     color: #f9f9f9;
+    cursor: pointer;
+}
+
+.contentPopover {
+    background: #fff;
+    border: 1px solid #424242;
+    margin-top: 13px;
+    color: #424242;
+}
+
+.itemPopover.lastItem {
+    border-top: 1px solid #ddd;
+}
+
+.itemPopover:hover {
+    background: #f9f9f9;
+}
+
+.itemPopover {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 20px;
 }
