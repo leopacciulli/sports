@@ -1,5 +1,5 @@
 # APP
-Simple app React.JS
+Plataforma Web desenvolvida com React.JS para agendamento online do seu salão de beleza.
 
 Intruções para executar o projeto:
 
