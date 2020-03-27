@@ -1,9 +1,32 @@
-# APP
-Plataforma Web desenvolvida com React.JS para agendamento online do seu salão de beleza.
+<h3 align="center">
+  <img src="./src/images/salao.jpg" width="250">
+</h3>
 
-Intruções para executar o projeto:
+<h3 align="center">
+:computer: Desenvolvendo um projeto WEB :computer:
+</h3>
 
-- Baixar ou fazer um clone do repositório;
-- Entrar com um terminal na pasta sports;
-- Rodar o comando "npm install" para baixar as depêndencias;
-- Em seguida rodar o comando "npm start" para abrir a web.
+- Uma plataforma web onde você poderá se cadastrar como pessoa (cliente) ou cadastrar o seu próprio estabelecimento (salão). Onde como cliente você poderá encontrar estabelecimentos, realizar agendamentos online, avaliações, etc. E como salão você poderá cadastrar as atividades que o seu estabelecimento exerce, cadastrar os profissionais que trabalham nele, deixar disponíveis imagens, etc.
+
+### :hammer_and_wrench: Tecnologias utilizadas:
+- React JS;
+- Heroku para conexão das APIs
+
+<h3 align="center">
+  :checkered_flag: Startando o projeto :checkered_flag:
+</h3>
+
+1° Clonar o projeto: `git clone https://github.com/leopacciulli/Hair-Shop.git`
+
+<br>
+
+2° Startar o projeto:
+
+```sh
+$ npm install
+$ npm start
+```
+
+---
+
+Autor: [Leonardo Pacciulli](https://www.linkedin.com/in/leonardo-pacciulli-a4b86a92/)
