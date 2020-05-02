@@ -8,56 +8,7 @@ export default class ServicosDisponiveis extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            servicos: [
-                {
-                    id: 5,
-                    servico: "Cabelo",
-                    imagem: "https://i.ibb.co/pbnRmmV/cabelo.jpg",
-                    salao: "Salão Jonas e Márcia",
-                    local: "Bragança Paulista - SP",
-                    preco: "25,00"
-                },
-                {
-                    id: 6,
-                    servico: "Barba",
-                    imagem: "https://i.ibb.co/9gmqXf2/barba.jpg",
-                    salao: "Beauty Salon",
-                    local: "Bragança Paulista - SP",
-                    preco: "30,00"
-                },
-                {
-                    id: 7,
-                    servico: "Manicure",
-                    imagem: "https://i.ibb.co/jMsZkPP/manicure.jpg",
-                    salao: "Salão Unisex",
-                    local: "Atibaia - SP",
-                    preco: "30,00"
-                },
-                {
-                    id: 8,
-                    servico: "Sombrancelha",
-                    imagem: "https://i.ibb.co/WnzTNVq/sombrancelha.jpg",
-                    salao: "Embelleze",
-                    local: "São Paulo - SP",
-                    preco: "18,00"
-                },
-                {
-                    id: 9,
-                    servico: "Combo: Corte + Barba",
-                    imagem: "https://i.ibb.co/QcBKB4w/cortebarba.jpg",
-                    salao: "Hair Cut",
-                    local: "Alphaville - SP",
-                    preco: "45,00"
-                },
-                {
-                    id: 10,
-                    servico: "Tintura",
-                    imagem: "https://i.ibb.co/g6Qsg3H/tintura.jpg",
-                    salao: "Salão de Beleza dois irmãos",
-                    local: "Barueri - SP",
-                    preco: "35,00"
-                }
-            ],
+            servicos: [],
             loading: false
         };
 
@@ -65,7 +16,7 @@ export default class ServicosDisponiveis extends Component {
     }
 
     componentDidMount() {
-        // this.getServices();
+        this.getServices();
     }
 
     getServices = () => {

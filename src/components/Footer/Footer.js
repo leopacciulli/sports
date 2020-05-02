@@ -9,7 +9,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <div className="redes">
-                    <a href="https://www.linkedin.com/in/leonardo-pacciulli-a4b86a92/" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/leonardo-pacciulli/" target="_blank" title="LinkedIn">
                         <img src={linkedin} alt="linkedin"/>
                     </a>
                     <a href="https://www.instagram.com/leopacciulli/?hl=pt-br" target="_blank" title="Instagram">
