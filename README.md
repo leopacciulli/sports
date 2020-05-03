@@ -44,7 +44,7 @@ The Front-End was developed with React.JS. The navigation screens were made with
 <br>
 
 ## 🏁 Starting the project
-Clone the project: `git clone https://github.com/leopacciulli/Hair-Shop.git`
+Clone the project: `git clone https://github.com/leopacciulli/The-Salon.git`
 
 <br>
 
